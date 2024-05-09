@@ -7,7 +7,7 @@ const getAllFood = async(req,res,next)=>{
         res.status(200).json({
             status: "Success",
             message: "Successfully fetch all Food data",
-            users: foodList
+            foods: foodList
           })
     } catch(e){
         res.status(e.statusCode || 500).json({
